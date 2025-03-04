@@ -90,3 +90,45 @@ footer {
     background-color: #333;
     color: white;
 }
+/* Tooltip Styling */
+.tooltip {
+    position: absolute;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 0.8em;
+    white-space: nowrap;
+    transform: translate(10px, -25px);
+    opacity: 0.9;
+}
+
+/* Dark Mode Styling */
+.dark-theme {
+    background-color: #121212;
+    color: white;
+}
+
+.dark-theme section {
+    background-color: #1e1e1e;
+    color: white;
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #0073e6;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.theme-toggle:hover {
+    background-color: #ff5733;
+}
