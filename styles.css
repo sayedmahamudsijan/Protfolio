@@ -1,12 +1,14 @@
-/* styles.css */
+/* General Styling */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
+    transition: background 0.3s, color 0.3s;
 }
 
+/* Header Styling */
 header {
     background-color: #0073e6;
     color: white;
@@ -14,6 +16,7 @@ header {
     padding: 20px;
 }
 
+/* Navigation Styling */
 nav ul {
     list-style: none;
     padding: 0;
@@ -35,6 +38,7 @@ nav ul li a:hover {
     color: #ffcc00;
 }
 
+/* Section Styling */
 section {
     padding: 20px;
     background-color: white;
@@ -42,17 +46,20 @@ section {
     width: 80%;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
 }
 
 section:hover {
     transform: scale(1.02);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
 }
 
+/* Headings */
 h2 {
     color: #0073e6;
 }
 
+/* Links */
 a {
     color: #0073e6;
     text-decoration: none;
@@ -65,11 +72,13 @@ a:hover {
     text-decoration: underline;
 }
 
+/* List Items */
 ul li {
     position: relative;
     padding: 10px;
 }
 
+/* Tooltip */
 ul li:hover::after {
     content: attr(data-detail);
     position: absolute;
@@ -82,28 +91,18 @@ ul li:hover::after {
     border-radius: 5px;
     font-size: 0.9em;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 10;
 }
 
+/* Footer */
 footer {
     text-align: center;
     padding: 15px;
     background-color: #333;
     color: white;
 }
-/* Tooltip Styling */
-.tooltip {
-    position: absolute;
-    background-color: black;
-    color: white;
-    padding: 5px;
-    border-radius: 5px;
-    font-size: 0.8em;
-    white-space: nowrap;
-    transform: translate(10px, -25px);
-    opacity: 0.9;
-}
 
-/* Dark Mode Styling */
+/* Dark Mode */
 .dark-theme {
     background-color: #121212;
     color: white;
@@ -112,6 +111,14 @@ footer {
 .dark-theme section {
     background-color: #1e1e1e;
     color: white;
+}
+
+.dark-theme a {
+    color: #1eb2ff;
+}
+
+.dark-theme a:hover {
+    color: #ff9933;
 }
 
 /* Theme Toggle Button */
@@ -131,4 +138,21 @@ footer {
 
 .theme-toggle:hover {
     background-color: #ff5733;
+}
+
+/* Profile Picture Styling */
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #0073e6;
+    display: block;
+    margin: 10px auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.profile-pic:hover {
+    transform: scale(1.1);
+    border-color: #ff5733;
 }
