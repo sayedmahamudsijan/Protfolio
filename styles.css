@@ -150,8 +150,10 @@ footer {
     display: block;
     margin: 10px auto;
     transition: transform 0.3s ease-in-out;
+    background: none; /* Ensures no unwanted background */
 }
 
+/* Hover effect */
 .profile-pic:hover {
     transform: scale(1.1);
     border-color: #ff5733;
